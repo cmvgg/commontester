@@ -3,7 +3,7 @@
 #make: 
       cd .. 
       make re
-      cd test
+      cd -
       clear
 
 directorio_archivos="./"

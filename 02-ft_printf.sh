@@ -2,5 +2,6 @@
 
 cd .. 
 make fclean && make && make re
-cd tester
+cd -
+clear
 

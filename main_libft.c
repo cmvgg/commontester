@@ -1,146 +1,150 @@
 #include "../libft.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char **argv)
 {
 	(void) argc;
-	if (argv[2] == "isalpha");
+	int standard = 0;
+	int comp = 0;
+	char func = argv[1][0];
+	if (strcmp(argv[2], "isalpha"))
 		{
-			int standard = isalpha (argv[1]);
-			int comp = ft_isalpha(argv[1]);
+			standard = isalpha(func);
+			comp = ft_isalpha(func);
 		}
-	else if (argv[2] == "isdigit");
+	else if (strcmp(argv[2], "isdigit"))
 		{
-			int standard = isdigit (argv[1]);
-			int comp = ft_isdigit(argv[1]);
-		}
-	
-	else if (argv[2] == "isalnum");
-		{
-			int standard = isalnum (argv[1]);
-			int comp = ft_isalnum(argv[1]);
-		}
-	else if (argv[2] == "isascii");
-		{
-			int standard = isascii (argv[1]);
-			int comp = ft_isascii(argv[1]);
+			standard = isdigit(func);
+			comp = ft_isdigit(func);
 		}
 	
-	else if (argv[2] == "isprint");
+	/*else if (argv[2] == "isalnum")
 		{
-			int standard = isprint (argv[1]);
-			int comp = ft_isprint(argv[1]);
+			standard = isalnum (argv[1]);
+			comp = ft_isalnum(argv[1]);
+		}
+	else if (argv[2] == "isascii")
+		{
+			standard = isascii (argv[1]);
+			comp = ft_isascii(argv[1]);
 		}
 	
-	else if (argv[2] == "strlen");
+	else if (argv[2] == "isprint")
 		{
-			int standard = strlen (argv[1]);
-			int comp = ft_strlen(argv[1]);
+			standard = isprint (argv[1]);
+			comp = ft_isprint(argv[1]);
+		}
+	
+	else if (argv[2] == "strlen")
+		{
+			standard = strlen (argv[1]);
+			comp = ft_strlen(argv[1]);
 		}
 
-	else if (argv[2] == "memset");
+	else if (argv[2] == "memset")
 		{
-			int standard = memset (argv[1]);
-			int comp = ft_memset(argv[1]);
+			standard = memset (argv[1]);
+			comp = ft_memset(argv[1]);
 		}
 
-	else if (argv[2] == "bzero");
+	else if (argv[2] == "bzero")
 		{
-			int standard = bzero (argv[1]);
-			int comp = ft_bzero(argv[1]);
+			standard = bzero (argv[1]);
+			comp = ft_bzero(argv[1]);
 		}
 
-	else if (argv[2] == "strchr");
+	else if (argv[2] == "strchr")
 		{
-			int standard = strchr (argv[1]);
-			int comp = ft_strchr(argv[1]);
+			standard = strchr (argv[1]);
+			comp = ft_strchr(argv[1]);
 		}
 
-	else if (argv[2] == "strrchr");
+	else if (argv[2] == "strrchr")
 		{
-			int standard = strrchr (argv[1]);
-			int comp = ft_strrchr(argv[1]);
+			standard = strrchr (argv[1]);
+			comp = ft_strrchr(argv[1]);
 		}
 
-	else if (argv[2] == "memcpy");
+	else if (argv[2] == "memcpy")
 		{
-			int standard = memcpy (argv[1]);
-			int comp = ft_memcpy(argv[1]);
+			standard = memcpy (argv[1]);
+			comp = ft_memcpy(argv[1]);
 		}
 
-	else if (argv[2] == "memmove");
+	else if (argv[2] == "memmove")
 		{
-			int standard = memmove (argv[1]);
-			int comp = ft_memmove(argv[1]);
+			standard = memmove (argv[1]);
+			comp = ft_memmove(argv[1]);
 		}
 
-	else if (argv[2] == "memcmp");
+	else if (argv[2] == "memcmp")
 		{
-			int standard = memcmp (argv[1]);
-			int comp = ft_memcmp(argv[1]);
+			standard = memcmp (argv[1]);
+			comp = ft_memcmp(argv[1]);
 		}
 
-	else if (argv[2] == "memchr");
+	else if (argv[2] == "memchr")
 		{
-			int standard = memchr (argv[1]);
-			int comp = ft_memchr(argv[1]);
+			standard = memchr (argv[1]);
+			comp = ft_memchr(argv[1]);
 		}
 
-	else if (argv[2] == "strlcpy");
+	else if (argv[2] == "strlcpy")
 		{
-			int standard = strlcpy (argv[1]);
-			int comp = ft_strlcpy(argv[1]);
+			standard = strlcpy (argv[1]);
+			comp = ft_strlcpy(argv[1]);
 		}
 
-	else if (argv[2] == "strlcat");
+	else if (argv[2] == "strlcat")
 		{
-			int standard = strlcat (argv[1]);
-			int comp = ft_strlcat(argv[1]);
+			standard = strlcat (argv[1]);
+			comp = ft_strlcat(argv[1]);
 		}
 
-	else if (argv[2] == "toupper");
+	else if (argv[2] == "toupper")
 		{
-			int standard = toupper (argv[1]);
-			int comp = ft_toupper(argv[1]);
+			standard = toupper (argv[1]);
+			comp = ft_toupper(argv[1]);
 		}
 
-	else if (argv[2] == "tolower");
+	else if (argv[2] == "tolower")
 		{
-			int standard = tolower (argv[1]);
-			int comp = ft_tolower(argv[1]);
+			standard = tolower (argv[1]);
+			comp = ft_tolower(argv[1]);
 		}
 
-	else if (argv[2] == "strnstr");
+	else if (argv[2] == "strnstr")
 		{
-			int standard = strnstr (argv[1]);
-			int comp = ft_strnstr(argv[1]);
-		}
-
-
-	else if (argv[2] == "atoi");
-		{
-			int standard = atoi (argv[1]);
-			int comp = ft_atoi(argv[1]);
-		}
-
-
-	else if (argv[2] == "calloc");
-		{
-			int standard = calloc (argv[1]);
-			int comp = ft_calloc(argv[1]);
-		}
-
-	else if (argv[2] == "strdup");
-		{
-			int standard = strdup (argv[1]);
-			int comp = ft_strdup(argv[1]);
+			standard = strnstr (argv[1]);
+			comp = ft_strnstr(argv[1]);
 		}
 
 
-	else if (argv[2] == "strndup");
+	else if (argv[2] == "atoi")
 		{
-			int standard = strndup (argv[1]);
+			standard = atoi (argv[1]);
+			comp = ft_atoi(argv[1]);
+		}
+
+
+	else if (argv[2] == "calloc")
+		{
+			standard = calloc (argv[1]);
+			comp = ft_calloc(argv[1]);
+		}
+
+	else if (argv[2] == "strdup")
+		{
+			standard = strdup (argv[1]);
+			comp = ft_strdup(argv[1]);
+		}
+
+
+	else if (argv[2] == "strndup")
+		{
+			standard = strndup (argv[1]);
 			(void) comp;
 		}
 	
@@ -215,18 +219,18 @@ int main(int argc, char **argv)
 		{
 			return (printf("\n"));
 		}
-	
-	if(argv != putnbr_fd || argv != putstr_fd || argv != putendl_fd || argv != putnbr_fd)
+	*/
+	if(argv /*!= putnbr_fd || argv != putstr_fd || argv != putendl_fd || argv != putnbr_fd*/)
 	{
-	FILE * test = fopen("test.txt", "r+");
+	FILE * test = fopen("test.txt", "w");
 	if (!test)
 		return (printf("Error\n"));
 
-	FILE * stan = fopen("test2.txt", "r+");
+	FILE * stan = fopen("test2.txt", "w");
 		if (!stan)
 		return (printf("Error\n"));
 	
-	fprintf(test, "%s", comp);
+	fprintf(test, "%i", comp);
 	fprintf(stan, "%i", standard);
 	
 	fclose(test);

@@ -2,8 +2,6 @@
 
 directorio_archivos="./"
 
-chmod +x archivo_in.sh
-function selector {
 echo "proyecto número: 
 	  1. Libft
 	  2. Printf
@@ -33,14 +31,14 @@ echo "proyecto número:
 
 echo "Introduce el numero del proyecto: "
 read proyecto
-if [[$proyecto = 1]]; then
-	chmod +x libft.sh
-	./01-libft.sh
 
-if [[$proyecto = 9]]; then
-	chmod +x pipex.sh
-	./07-pipex.sh
+if [ $proyecto -eq 1 ]; then
+    chmod +x 01-libft.sh
+    ./01-libft.sh
+elif [ $proyecto -eq 7 ]; then
+    chmod +x 07-pipex.sh
+    ./07-pipex.sh
 else
-	echo "El test no existe"
+    echo "El test no existe"
 fi
-}
+
